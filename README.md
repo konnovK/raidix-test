@@ -15,6 +15,7 @@
 ## Для создания rpm пакета сначала соберу этот исходный код в tar:
 
 `$ rm testtask-1.0.tar`
+
 `$ tar czf testtask-1.0.tar testtask-1.0`
 
 *(ключ -c для создания архива)*
@@ -27,12 +28,14 @@
 
 
 `$ rm /home/kk/rpmbuild/SOURCES/testtask-1.0.tar`
+
 `$ cp testtask-1.0.tar /home/kk/rpmbuild/SOURCES/testtask-1.0.tar`
 
 
 ## Теперь перенесу .spec файл в папку SPECS:
 
 `$ rm /home/kk/rpmbuild/SPECS/testtask.spec`
+
 `$ cp testtask.spec /home/kk/rpmbuild/SPECS/testtask.spec`
 
 
